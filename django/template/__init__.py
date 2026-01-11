@@ -51,12 +51,9 @@ __all__ = ("Engine", "engines")
 
 # Django Template Language
 
+# Template parts
 # Public exceptions
 from .base import VariableDoesNotExist  # noqa: E402
-from .context import Context, ContextPopException, RequestContext  # noqa: E402
-from .exceptions import TemplateDoesNotExist, TemplateSyntaxError  # noqa: E402
-
-# Template parts
 from .base import (  # noqa: E402
     Node,
     NodeList,
@@ -65,6 +62,8 @@ from .base import (  # noqa: E402
     Template,
     Variable,
 )
+from .context import Context, ContextPopException, RequestContext  # noqa: E402
+from .exceptions import TemplateDoesNotExist, TemplateSyntaxError  # noqa: E402
 
 # Library management
 from .library import Library  # noqa: E402
